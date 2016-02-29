@@ -8,6 +8,8 @@ An Android app that utilizes the Rest Scheduler API
 
 For a description of the full API see: https://github.com/brifishjones/rest-scheduler
 
+To download and install a free copy visit https://play.google.com/store/apps/details?id=com.bitfoxy.restscheduler
+
 ## API Key
 
 The API Key would normally be a long GUID such as `3b298e650c17ac77f140542bfc722b01` 
