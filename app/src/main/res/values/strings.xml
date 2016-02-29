@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RestScheduler</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">View on Github</string>
+
+    <string name="api_key_label">API Secret Key:</string>
+    <!--string name="edit_api_key">Enter API Secret Key</string-->
+    <string name="edit_api_key">4:James Young</string>
+    <string name="api_return_value">Select an API call from the dropdown menu</string>
+</resources>
