@@ -90,7 +90,6 @@ public class MainActivity extends AppCompatActivity
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
         switch (item.getItemId()) {
             case R.id.action_github:
@@ -99,7 +98,7 @@ public class MainActivity extends AppCompatActivity
                 return true;
 
             default:
-                // If we got here, the user's action was not recognized.
+                // User's action was not recognized.
                 // Invoke the superclass to handle it.
                 return super.onOptionsItemSelected(item);
 
@@ -137,12 +136,10 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void CreateApiKeyList(String users, int viewid, int resourceid)
-    // Create an autocomplete list for the edit text given by the view id.
-    // Returns the same alist variable passed in, but with the autocomplete list filled.
-    // Eg: filename = "/babycrytomephonelist.txt"
-    // array list used as separator: alist = mPhoneList,
-    // view id for the edit text: viewid = R.id.edit_phone,
-    // resource id for the activity: resourceid = R.layout.source
+    // Create an autocomplete list for the edit text given by the viewid.
+    // view id for the edit text: viewid = R.id.edit_api_key
+    // resource id for the activity: resourceid = R.layout.list_item
+
     {
         mApiKeyList = new ArrayList<String>();
         JSONArray jsonArray = null;
@@ -198,10 +195,8 @@ public class MainActivity extends AppCompatActivity
 
         @Override
         protected String doInBackground(String... urls) {
-            // url[0] is the auth_key and url[1] is the request
+        // url[0] is the auth_key and url[1] is the request
             final String API_URL = "https://gentle-brushlands-1205.herokuapp.com";
-
-            //SystemClock.sleep(10000);
 
             try {
                 URL url = new URL(API_URL + urls[1]);
